@@ -43,7 +43,7 @@ namespace CarDealerProjekt
         public string SQLConnection()
         {
             IConfiguration config = new ConfigurationBuilder()
-                .SetBasePath("C:\\Users\\jonkn0001.PCSYD\\Downloads\\CarDealerProjekt\\CarDealerProjekt\\")
+                .SetBasePath("Path")
                 .AddJsonFile("appsettings.json")
                 .Build();
             string connectionString = config.GetConnectionString("Default");
